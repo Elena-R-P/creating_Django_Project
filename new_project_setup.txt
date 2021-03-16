@@ -1,0 +1,46 @@
+Creating a Django Project
+
+1. Activate your Django virtual environment:
+source djando_ve/bin/activate
+
+2. Navigate to where you want the project to be saved.
+3. Create a new Django project: 
+django-admin startproject {name_of_project}
+
+4. Navigate into the newly-created project directory.
+5. Create a new Django app: 
+python manage.py startapp {name_of_app}
+
+6. Add to your_project_name_here/your_project_name_here/settings.py your newly-created app:
+INSTALLED_APPS = [
+    'your_project_name_here',
+]
+
+7. In the project directory, open urls.py in VS Code:
+from django.urls import path, include
+urlpatterns = [
+    path('', include('your_app_name_here.urls')),
+]
+
+8. In the app directory, open urls.py in VS Code:
+from django.urls import path     
+from . import views
+urlpatterns = [
+    path('', views.index),
+]
+
+9. Add a path from the root route to a function in your views.py file. Open views.py in VS Code to create that function:
+from django.shortcuts import render, HttpResponse, redirect
+from django.http import JsonResponse
+def index(request):
+    return HttpResponse("this is the equivalent of @app.route('/')!")
+
+
+*Create the function you named in step 8.4 and return a render of a template.
+*Create the template you named in step 9.2. It needs to be in a folder called templates in the app directory.
+
+10. Spin up your server and see if it works!
+python manage.py runserver
+
+
+
