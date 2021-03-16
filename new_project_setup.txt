@@ -13,7 +13,7 @@ python manage.py startapp {name_of_app}
 
 6. Add to your_project_name_here/your_project_name_here/settings.py your newly-created app:
 INSTALLED_APPS = [
-    'your_project_name_here',
+    'your_app_name_here',
 ]
 
 7. In the project directory, open urls.py in VS Code:
@@ -33,8 +33,7 @@ urlpatterns = [
 from django.shortcuts import render, HttpResponse, redirect
 from django.http import JsonResponse
 def index(request):
-    return HttpResponse("this is the equivalent of @app.route('/')!")
-
+    from . import views
 
 *Create the function you named in step 8.4 and return a render of a template.
 *Create the template you named in step 9.2. It needs to be in a folder called templates in the app directory.
