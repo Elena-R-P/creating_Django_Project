@@ -32,8 +32,9 @@ urlpatterns = [
 9. Add a path from the root route to a function in your views.py file. Open views.py in VS Code to create that function:
 from django.shortcuts import render, HttpResponse, redirect
 from django.http import JsonResponse
+
 def index(request):
-    from . import views
+return render(request, 'index.html')
 
 *Create the function you named in step 8.4 and return a render of a template.
 *Create the template you named in step 9.2. It needs to be in a folder called templates in the app directory.
