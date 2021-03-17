@@ -23,5 +23,9 @@ index.html
 {% endblock title %}
 
 {% block content %}
-.........
+
+<forms>
+{% csrf_token %}
+
+
 {% endblock content %}
