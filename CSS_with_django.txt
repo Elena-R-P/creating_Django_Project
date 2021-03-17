@@ -1,0 +1,14 @@
+https://getbootstrap.com/
+
+add to HTML:
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+
+
+
+some styles:
+    display: flex;
+    justify-content: center;
+    align-items:stretch;
+    list-style-type: none;

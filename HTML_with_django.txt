@@ -1,0 +1,27 @@
+base.html
+<title>
+        {% block title %}
+        Project
+        {% endblock title %}
+</title>
+
+
+<body>
+    <div class="container">
+        {% block content %}
+        
+        {% endblock content %}
+    </div>
+</body>
+
+
+index.html
+{% extends 'base.html' %}
+
+{% block title %}
+{{ clock.super }} - Home
+{% endblock title %}
+
+{% block content %}
+.........
+{% endblock content %}

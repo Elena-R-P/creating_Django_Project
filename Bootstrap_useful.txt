@@ -1,0 +1,10 @@
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    
+if after the set up properly style.css doesn't work:
+in terminal:
+1. stop server
+2. python manage.py migrate
+3. python manage.py runserver - runserver again
+
