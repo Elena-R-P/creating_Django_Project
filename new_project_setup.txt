@@ -58,5 +58,8 @@ class Movie(models.Model):
 oneToMany:
     <<class_name_one>> = models.ForeignKey(Dojo, related_name='<<pluralClassNAme_many>>', on_delete=models.CASCADE)
 
+ManyToMany:
+<<pluralOtherClassName>> = models.ManyToManyField(<<OtherClassName>>, related_name='<<pluralThisClassName>>')
+
 
 
