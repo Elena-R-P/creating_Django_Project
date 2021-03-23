@@ -32,6 +32,8 @@ urlpatterns = [
 9. Add a path from the root route to a function in your views.py file. Open views.py in VS Code to create that function:
 from django.shortcuts import render, HttpResponse, redirect
 from django.http import JsonResponse
+import random
+from .models import <<name_of_the_class>>
 
 def index(request):
 return render(request, 'index.html')
@@ -52,6 +54,9 @@ class Movie(models.Model):
     duration = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    
+oneToMany:
+    <<class_name_one>> = models.ForeignKey(Dojo, related_name='<<pluralClassNAme_many>>', on_delete=models.CASCADE)
 
 
 
