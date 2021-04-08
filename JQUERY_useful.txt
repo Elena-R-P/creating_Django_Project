@@ -26,6 +26,7 @@ Manipulation (retrieving or setting value or text in any HTML element)
     .html()
     .text()
     .val()
+
 Events (functions to handle an event)
     .click()
     .on()
