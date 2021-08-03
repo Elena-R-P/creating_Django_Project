@@ -24,7 +24,7 @@ urlpatterns = [
     path('', include('your_app_name_here.urls')),
 ]
 
-8. In the app directory, open urls.py in VS Code:
+8. In the app directory, create urls.py, open urls.py in VS Code:
 from django.urls import path     
 from . import views
 urlpatterns = [
